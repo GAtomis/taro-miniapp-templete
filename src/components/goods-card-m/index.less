@@ -1,0 +1,43 @@
+.goods-item-m {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 16px;
+  .img {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+    flex-shrink: 0;
+  }
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 28px;
+
+    .name {
+      font-size: 30px;
+      color: #000000;
+      // 超过一行显示省略号
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .price {
+      font-size: 28px;
+      .sale-price {
+        font-weight: bold;
+        color: #e84113;
+        margin-right: 12px;
+      }
+      .market-price {
+        font-weight: 400;
+        color: #979797;
+        text-decoration: line-through;
+      }
+    }
+  }
+}

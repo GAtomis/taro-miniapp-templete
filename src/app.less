@@ -1,0 +1,265 @@
+page {
+  height: 100%;
+  width: 100%;
+  background: #f8f8f8;
+}
+
+body,
+div,
+.hydrated {
+  box-sizing: border-box;
+}
+
+.taro_page {
+  font-size: 14px;
+}
+
+.container {
+  box-sizing: border-box;
+  background: #f8f8f8;
+}
+
+.bar-container {
+  padding-bottom: 0;
+}
+
+/**自定义组件*/
+.my-tab-bar {
+  padding: 0px 0 6px !important;
+}
+
+.at-tab-bar__icon {
+  font-size: 20px;
+}
+
+/** grid **/
+.at-grid {
+  background: #fff;
+  border-radius: 14px;
+  margin-top: 20px;
+
+  .at-grid__flex .content-inner__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .at-grid__flex .content-inner__text {
+    font-size: 30px;
+  }
+}
+
+/** list **/
+.at-list {
+  background: #fff;
+  border-radius: 14px;
+  margin-top: 20px;
+
+  .at-list__item::after {
+    border-color: #ebedf0;
+  }
+
+  .at-list__item--thumb .item-thumb {
+    width: 34px;
+    height: 34px;
+
+
+  }
+
+  .at-list__item-content {
+    text-align: left;
+  }
+
+}
+
+/**tabs**/
+.at-tabs-pane {
+  background: rgb(249, 249, 249);
+  ;
+}
+
+/*  #ifdef weapp  */
+view,
+image,
+text,
+navigator {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*  #endif  */
+
+
+/*  #ifdef h5  */
+div,
+img,
+span,
+navigator {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*  #endif  */
+.row_ellipse,
+.lineov1 {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.p1rem {
+  padding: 1rem;
+}
+
+.self-button {
+  @height: 2rem;
+  background-color: #d5ba73;
+  color: white;
+  border-radius: (@height / 2);
+  height: @height;
+  line-height: @height;
+  font-size: .6rem;
+  font-weight: bolder;
+  margin: 0 auto;
+}
+
+.flex-one {
+  flex: 1 1 0;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-center {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.weui-input {
+  height: auto !important;
+  line-height: 1.5;
+}
+
+.gray {
+  color: #8e8e8e;
+}
+
+.middle_font {
+  font-size: .65rem;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.pl1rem {
+  padding-left: 1rem;
+}
+
+.pr1rem {
+  padding-right: 1rem;
+}
+
+.mr12 {
+  margin-right: 12Px;
+}
+
+.mt1rem {
+  margin-top: 1rem;
+}
+
+.clickable {
+  color: #b4282d;
+}
+
+.middle-img {
+  width: 3rem;
+  height: 3rem;
+}
+
+:root {
+  --border-color: #f9f9f9;
+  --bg-color: #f4f4f4;
+}
+
+@globa-prefix: sysr;
+
+.bg-color {
+
+  background: #f4f4f4;
+
+}
+.acea-row.row-center {
+  -o-box-pack: center;
+  justify-content: center;
+}
+.acea-row.row-bottom {
+  -o-box-align: end;
+  align-items: flex-end;
+}
+
+.acea-row.row-between-wrapper {
+  -o-box-align: center;
+  align-items: center;
+  -o-box-pack: justify;
+  justify-content: space-between;
+}
+.acea-row.row-center-wrapper {
+  -o-box-align: center;
+  align-items: center;
+  -o-box-pack: center;
+  justify-content: center;
+}
+.acea-row.row-middle {
+  -o-box-align: center;
+  align-items: center;
+}
+
+.acea-row {
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  flex-wrap: wrap;
+}
+.loadingpic {
+	animation: load 3s linear 1s infinite;
+	--webkit-animation: load 3s linear 1s infinite
+}
+.scroll-coupon{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.back-icon{
+  width: 44px;
+  height: 44px;
+}
