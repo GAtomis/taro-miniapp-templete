@@ -17,6 +17,7 @@ import {
   View,
 } from "@tarojs/components";
 import './home.less'
+import SwiperBanner from "./components/swiper-banner";
 
 const Index = () => {
 
@@ -54,7 +55,7 @@ const Index = () => {
   return (
     <>
       <View className="bar-container container">
-     
+        <SwiperBanner></SwiperBanner>
       </View>
     </>
   );

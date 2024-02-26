@@ -1,7 +1,7 @@
 
 import Taro from '@tarojs/taro';
 import store from '../dva';
-import {set as setGlobalData, get as getGlobalData} from '../global_data';
+
 import {isLoginState} from './utils'
 /**
  *

@@ -1,5 +1,3 @@
-
-//后端枚举请求列表
 export const dictTypes=[
     "trade_order_refund_reason",//取消订单原因,
     "trade_after_sale_way",//退货原因,

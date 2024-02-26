@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./",
-  "projectname": "myApp",
-  "appid": "testAppId",
+  "projectname": "MUMMY-MINIAPP",
+  "appid": "wxc54bc4886614dbb1",
   "setting": {
     "es6": false,
     "minified": false

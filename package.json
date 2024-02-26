@@ -1,5 +1,5 @@
 {
-  "name": "taro-miniapp-templete",
+  "name": "templete-taro-app",
   "version": "1.0.0",
   "private": true,
   "description": "typescriptDemo",
@@ -37,7 +37,7 @@
     "Android >= 4.1",
     "ios >= 8"
   ],
-  "author": "Gavin Zhou",
+  "author": "GAtomis",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@nutui/icons-react-taro": "^0.0.1",
@@ -73,9 +73,9 @@
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "@tarojs/cli": "^3.6.16",
     "@tarojs/mini-runner": "^3.6.16",
+    "@tarojs/plugin-inject": "^3.6.18",
     "@tarojs/taro-loader": "^3.6.16",
     "@tarojs/webpack5-runner": "^3.6.16",
-    "@tarojs/plugin-inject": "^3.6.18",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.0",
     "@types/webpack-env": "^1.13.6",

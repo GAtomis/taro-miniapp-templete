@@ -6,7 +6,7 @@ import dva from "./dva";
 import models from "./models";
 import * as user from "./utils/user";
 import * as app from "./utils/app";
-import { set as setGlobalData } from "./global_data";
+// import { set as setGlobalData } from "./global_data";
 import "@nutui/nutui-react-taro/dist/style.css";
 import "./app.less";
 import { isLoginState, wxLogin } from "./utils/utils";
@@ -52,13 +52,7 @@ class App extends Component {
   };
 
   componentDidShow() {
-    // console.log(Taro.getMenuButtonBoundingClientRect(),"蛋糕度");
-    // user.checkLogin().then(res => {
-    //   setGlobalData('hasLogin', true);
-    // }).catch(() => {
-    //   setGlobalData('hasLogin', false);
-    // });
-    // Taro.setStorageSync('token', "940afd58cbca452c9c338cd1dcaf30cf")
+
     //获取最新字典
     dictTypes.forEach((item) => {
       store.dispatch({

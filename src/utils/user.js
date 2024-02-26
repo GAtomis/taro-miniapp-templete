@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
-import { loginByWeXin, logOut } from "../services/auth";
-import { set as setGlobalData } from "../global_data";
+// import { loginByWeXin, logOut } from "../services/auth";
+// import { set as setGlobalData } from "../global_data";
 import { wxLogin } from "./utils"
 /**
  * Promise封装wx.checkSession
@@ -54,17 +54,5 @@ export function checkLogin() {
 }
 
 export function userLogout(to) {
-  return logOut().then(() => {
-    setGlobalData("hasLogin", false);
-    Taro.removeStorageSync("token");
-    Taro.removeStorageSync("openId");
-    Taro.removeStorageSync("loginCode");
-    Taro.removeStorageSync("userInfo");
-    Taro.removeStorageSync("tab");
-    Taro.removeStorageSync("SELECTED_CART_GOODS");
-    wxLogin();
-    Taro.reLaunch({
-      url: to,
-    });
-  });
+
 }
